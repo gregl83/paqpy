@@ -1,0 +1,2 @@
+# paqpy
+🐍#️⃣ Hashing For Python
