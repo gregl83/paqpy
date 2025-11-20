@@ -1,6 +1,6 @@
 # paqPy
 
-🐍#️⃣ Fast Hashing of File or Directory
+Hash file or directory recursively.
 
 Python bindings to the Rust `paq` library.
 
