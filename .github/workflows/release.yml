@@ -5,7 +5,7 @@ on:
     types: [published]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build_wheels:
@@ -67,6 +67,11 @@ jobs:
           pattern: wheels-*
           path: dist
           merge-multiple: true
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
 
       - name: Publish to PyPI
         uses: PyO3/maturin-action@v1
