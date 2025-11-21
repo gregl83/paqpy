@@ -1,3 +1,5 @@
+[![Build](https://github.com/gregl83/paqpy/actions/workflows/release.yml/badge.svg)](https://github.com/gregl83/paqpy/actions/workflows/release.yml)
+[![PyPI](https://img.shields.io/pypi/v/paqpy.svg)](https://pypi.org/project/paqpy/)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gregl83/paqpy/blob/master/LICENSE)
 
 # paqPy

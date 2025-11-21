@@ -6,6 +6,7 @@ build-backend = "maturin"
 name = "paqpy"
 version = "1.3.0"
 description = "Hash file or directory recursively."
+readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Rust",
@@ -18,3 +19,7 @@ authors = [
 maintainers = [
     {name = "gregory langlais"}
 ]
+
+[project.urls]
+Homepage = "https://pypi.org/project/paqpy/"
+Repository = "https://github.com/gregl83/paqpy"
