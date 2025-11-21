@@ -1,3 +1,5 @@
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gregl83/paqpy/blob/master/LICENSE)
+
 # paqPy
 
 Hash file or directory recursively.
@@ -26,13 +28,13 @@ See [paq benchmarks](https://github.com/gregl83/paq/blob/main/docs/benchmarks.md
 
 ## Installation
 
-### PyPI
+### Install From PyPI
 
 ```bash
 pip install paqpy
 ```
 
-### Repository (Unstable)
+### Install From Repository (Unstable)
 
 Not recommended due to instability of main branch in-between tagged releases.
 
