@@ -234,9 +234,9 @@ checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
 
 [[package]]
 name = "paq"
-version = "1.3.1"
+version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "759477563a4b49b30d5668cb16703279fcb77a245c980c9a6dba9e66933f216e"
+checksum = "32af31972d244e6b38affe146cf94677a07157a18fc3715c6ce74097f5cf8a85"
 dependencies = [
  "arrayvec",
  "blake3",
@@ -248,7 +248,7 @@ dependencies = [
 
 [[package]]
 name = "paqpy"
-version = "1.3.1"
+version = "1.3.2"
 dependencies = [
  "paq",
  "pyo3",
