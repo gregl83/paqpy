@@ -4,22 +4,26 @@ build-backend = "maturin"
 
 [project]
 name = "paqpy"
-version = "1.3.0"
-description = "Hash file or directory recursively."
-readme = "README.md"
+version = "1.3.1"
 requires-python = ">=3.7"
-classifiers = [
-    "Programming Language :: Rust",
-    "Programming Language :: Python :: Implementation :: CPython",
-    "Programming Language :: Python :: Implementation :: PyPy",
-]
 authors = [
     {name = "gregory langlais"},
 ]
 maintainers = [
     {name = "gregory langlais"}
 ]
+description = "Hash file or directory recursively."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["hash", "directory", "file", "blake3", "rust"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
 
 [project.urls]
-Homepage = "https://pypi.org/project/paqpy/"
 Repository = "https://github.com/gregl83/paqpy"
+Issues = "https://github.com/gregl83/paqpy/issues"
