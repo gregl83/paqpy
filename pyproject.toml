@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "paqpy"
-version = "1.4.0"
+version = "1.4.1"
 requires-python = ">=3.7"
 authors = [
     {name = "gregory langlais"},
