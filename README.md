@@ -51,12 +51,20 @@ Not recommended due to instability of main branch in-between tagged releases.
 ```python
 import paqpy
 
-source = "/path/to/source"
+from pathlib import Path
+
+source = Path("/path/to/source")
 ignore_hidden = True # .dir or .file
 source_hash = paqpy.hash_source(source, ignore_hidden)
 
 print(source_hash)
 ```
+
+`hash_source` returns a hexadecimal hash string. File system failures raise the
+corresponding Python `OSError` subclass, such as `FileNotFoundError` or
+`PermissionError`. Invalid UTF-8 paths raise `UnicodeError`, invalid source
+relationships raise `ValueError`, and other hashing failures raise
+`paqpy.PaqError`.
 
 Visit the [paq](https://github.com/gregl83/paq) homepage for more details.
 
