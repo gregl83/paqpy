@@ -81,6 +81,7 @@ dependencies = [
  "cfg-if",
  "constant_time_eq",
  "cpufeatures",
+ "rayon-core",
 ]
 
 [[package]]
@@ -243,9 +244,9 @@ checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
 
 [[package]]
 name = "paq"
-version = "1.5.0"
+version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "90d73918f7efce19eefe1b09f5acf261694e9b6ec03727b4d685271ed2ac4f99"
+checksum = "f8a09c4e3240e3354cc7df72639af62c5a83fe4e3637879742b6a13a5533f622"
 dependencies = [
  "anyhow",
  "arrayvec",
@@ -259,7 +260,7 @@ dependencies = [
 
 [[package]]
 name = "paqpy"
-version = "1.5.0"
+version = "2.0.0"
 dependencies = [
  "paq",
  "pyo3",

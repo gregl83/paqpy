@@ -17,10 +17,16 @@ def main():
         help="Ignore files or directories starting with dot or full stop"
     )
 
+    parser.add_argument(
+        "--follow", "-L",
+        action="store_true",
+        help="Follow symbolic links and hash their targets"
+    )
+
     args = parser.parse_args()
 
     try:
-        hash_result = paqpy.hash_source(args.source, args.ignore_hidden)
+        hash_result = paqpy.hash_source(args.source, args.ignore_hidden, args.follow)
         print(hash_result)
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
