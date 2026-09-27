@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "paqpy"
-version = "1.5.0"
+version = "2.0.0"
 requires-python = ">=3.7"
 authors = [
     {name = "gregory langlais"},
@@ -12,7 +12,7 @@ authors = [
 maintainers = [
     {name = "gregory langlais"}
 ]
-description = "Hash file or directory recursively."
+description = "Hash directory or file with BLAKE3."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]

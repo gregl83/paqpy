@@ -14,9 +14,14 @@ create_exception!(
 );
 
 #[pyfunction]
-#[pyo3(name = "hash_source")]
-fn hash_source(py: Python<'_>, source: PathBuf, ignore_hidden: bool) -> PyResult<String> {
-    py.detach(|| paq::try_hash_source(&source, ignore_hidden))
+#[pyo3(name = "hash_source", signature = (source, ignore_hidden, follow_links=false))]
+fn hash_source(
+    py: Python<'_>,
+    source: PathBuf,
+    ignore_hidden: bool,
+    follow_links: bool,
+) -> PyResult<String> {
+    py.detach(|| paq::hash_source(&source, ignore_hidden, follow_links))
         .map(|hash| hash.to_string())
         .map_err(paq_error_to_py)
 }
